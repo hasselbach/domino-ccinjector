@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257DE4005609A1" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="166" sequence="2" unid="D0A2E67901CF838FC1257DE40056141C">
+<created><datetime>20150206T164012,44+01</datetime></created>
+<modified><datetime>20150206T164012,61+01</datetime></modified>
+<revised><datetime>20150206T164012,60+01</datetime></revised>
+<lastaccessed><datetime>20150206T164012,60+01</datetime></lastaccessed>
+<addedtofile><datetime>20150206T164012,50+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Sven Hasselbach/O=Hasselba/C=CH</name><name>CN=Dev01/O=Hasselba/C=CH</name><name>CN=Sven Hasselbach/O=Hasselba/C=CH</name></updatedby>
+<wassignedby><name>CN=Sven Hasselbach/O=Hasselba/C=CH</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>ch/hasselba/xpages/renderkit/html_basic/CCInjectorRenderer.java</text></item>
+
+
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>ch/hasselba/xpages/renderkit/html_basic/CCInjectorRenderer.java</text></item></note>

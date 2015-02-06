@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:sh="http://hasselba.ch/xsp/control"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:button
+		value="Create large list"
+		id="buttonCreateLarge">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="partial">
+			<xp:this.action>
+				<![CDATA[#{javascript:
+					var obj = new Array();
+										
+					for( i=0; i<100; i++ ){
+					
+						obj.push( { cc: "Test1", demo: i } );
+						obj.push( { cc: "Test2", demo: i } );
+						obj.push( { cc: "Test3", demo: i } );
+					}
+					
+					viewScope.put( "data", obj );
+					
+					getComponent("ccInjector").rebuild( facesContext );}]]>
+			</xp:this.action>
+		</xp:eventHandler>
+	</xp:button>
+	<xp:button
+		value="Create single list"
+		id="buttonCreateSingle">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="partial">
+			<xp:this.action>
+				<![CDATA[#{javascript:
+					importPackage( ch.hasselba.xpages.component );
+
+					var arr = new Array();
+
+					arr.push( { cc: 'Test1', demo: 1 } );
+					arr.push( { cc: 'Test2', demo: 2 } );
+					arr.push( { cc: 'Test3', demo: 3 } );
+
+
+					viewScope.put( "data", arr );
+					getComponent("ccInjector").rebuild( facesContext );}]]>
+			</xp:this.action>
+		</xp:eventHandler>
+	</xp:button>
+	
+	<xp:br />
+	<xp:br />
+	
+	<xp:button
+		value="Full Update"
+		id="buttonFullUpdate">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="complete">
+		</xp:eventHandler>
+	</xp:button>
+	<xp:button
+		value="Partial Update"
+		id="buttonPartialUpdate">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="partial">
+		</xp:eventHandler>
+	</xp:button>
+	
+	<xp:br />
+	<xp:br />
+	
+	<xp:button
+		value="Submit"
+		id="buttonSubmit">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="partial"
+			immediate="false"
+			save="true">
+		</xp:eventHandler>
+	</xp:button>
+	<xp:br></xp:br>
+	<sh:ccInjector
+		id="ccInjector"
+		contextVar="cVarName"
+		variableName="cc">
+		<xp:this.fieldData>
+			<![CDATA[#{javascript:viewScope.data}]]>
+		</xp:this.fieldData>
+	</sh:ccInjector>
+</xp:view>

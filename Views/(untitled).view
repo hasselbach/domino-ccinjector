@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<view xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257DE4005609A1'
+ showinmenu='true' publicaccess='false' default='true' noviewformat='true'>
+<noteinfo noteid='11a' unid='41BC036BA35D9829C1257DE4005609A6' sequence='1'>
+<created><datetime>20150206T163945,66+01</datetime></created>
+<modified><datetime>20150206T163945,68+01</datetime></modified>
+<revised><datetime>20150206T163945,67+01</datetime></revised>
+<lastaccessed><datetime>20150206T163945,67+01</datetime></lastaccessed>
+<addedtofile><datetime>20150206T163945,67+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Sven Hasselbach/O=Hasselba/C=CH</name></updatedby><code
+ event='selection'><formula>SELECT @All</formula></code>
+<item name='$FormulaClass'><text>1</text></item></view>
+

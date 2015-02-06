@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+                              "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+<faces-config>
+	<faces-config-extension>
+		<namespace-uri>http://hasselba.ch/xsp/control</namespace-uri>
+		<default-prefix>sh</default-prefix>
+	</faces-config-extension>
+	<component>
+		<group-type-ref>ch.hasselba.xpages.component.group.definition</group-type-ref>
+		<description>CustomControl Injector</description>
+		<display-name>CCInjector</display-name>
+		<component-type>ch.hasselba.ccinjector</component-type>
+		<component-class>ch.hasselba.xpages.component.UICCInjector</component-class>
+		<component-extension>
+			<component-family>ch.hasselba.ccinjector</component-family>
+			<renderer-type>ch.hasselba.ccinjector</renderer-type>
+			<tag-name>ccInjector</tag-name>
+			<designer-extension>
+				<in-palette>true</in-palette>
+				<category>CCInjector</category>
+			</designer-extension>
+		</component-extension>
+	</component>
+	<group>
+		<group-type>ch.hasselba.xpages.component.group.definition</group-type>
+		<property>
+			<description>Variable name containing the name of the Custom Control</description>
+			<display-name>variableName</display-name>
+			<property-name>variableName</property-name>
+			<property-class>java.lang.String</property-class>
+			<property-extension>
+				<required>true</required>
+				<designer-extension>
+					<category>ccinjector</category>
+					<editor>com.ibm.std.String</editor>
+				</designer-extension>
+			</property-extension>
+		</property>
+		<property>
+			<description>The field data to include</description>
+			<display-name>Field Data</display-name>
+			<property-name>fieldData</property-name>
+			<property-class>java.lang.Object</property-class>
+			<property-extension>
+				<required>true</required>
+				<designer-extension>
+					<category>CCInjector</category>
+					<editor>com.ibm.std.String</editor>
+				</designer-extension>
+			</property-extension>
+		</property>
+		<property>
+			<description>Name of the context variable to add</description>
+			<display-name>Context Variable</display-name>
+			<property-name>contextVar</property-name>
+			<property-class>java.lang.String</property-class>
+			<property-extension>
+				<required>true</required>
+				<designer-extension>
+					<category>CCInjector</category>
+					<editor>com.ibm.std.String</editor>
+				</designer-extension>
+			</property-extension>
+		</property>
+		<group-extension>
+			<designer-extension>
+				<category>CCInjector</category>
+				<tags>group-in-complex</tags>
+			</designer-extension>
+		</group-extension>
+	</group>
+</faces-config>

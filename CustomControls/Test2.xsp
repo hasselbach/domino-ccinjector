@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<hr />Test 2
+	<xp:inputText id="inputText2" value="#{viewScope.Test2}"></xp:inputText>
+	<xp:br></xp:br>
+	<hr />
+</xp:view>
